@@ -30,7 +30,7 @@ if user_text := st.chat_input("Escribe tu mensaje..."):
     with st.chat_message("assistant"):
         with st.spinner("Pensando..."):
             resp = chat_chain.invoke(
-                {"question": user_text},
+                user_text,
                 config={"configurable": {"session_id": st.session_state.session_id}}
             )
             st.markdown(resp.content)
