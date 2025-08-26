@@ -1,0 +1,19 @@
+# Núcleo de LangChain
+langchain>=0.3,<0.4
+
+# Conectores oficiales de LangChain
+langchain-openai>=0.2,<0.3
+langchain-pinecone>=0.2,<0.3
+
+# SDK oficial de OpenAI
+openai>=1.6.1,<2
+
+# Cliente oficial de Pinecone (nuevo, reemplaza pinecone-client)
+pinecone>=5.0.0
+
+# Ciencia de datos
+numpy<2
+pandas
+
+# .env para gestionar credenciales de forma segura
+python-dotenv
